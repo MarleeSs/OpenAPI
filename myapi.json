@@ -1,0 +1,23 @@
+{
+  "openapi" : "3.0.3",
+  "info" : {
+    "title" : "My API",
+    "version" : "1.0.0",
+    "description": "An Open API is an application programming interface (API) that enables third-party developers to build software applications and web services."
+  },
+  "servers": [{
+    "url": "https://{environment}.myapi.com/v1",
+    "variables": {
+      "environment" : {
+        "description": "Server environment",
+        "default": "api",
+        "enum": [
+          "api",
+          "api.staging",
+          "api.dev"
+        ]
+      }
+    }
+  }],
+  "paths": {}
+}
